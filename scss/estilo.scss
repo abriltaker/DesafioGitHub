@@ -1,0 +1,137 @@
+@import "colores";
+@import "sizes";
+
+body{
+	padding-top: 6em;
+}
+nav{
+	background-color:$darkPink;
+	ul{
+		list-style: none;
+	}
+	li{
+		padding-right: 1em;
+		font-family: Roboto;
+		a{
+			color: black;
+			text-decoration:none;
+			&:hover{
+				color: yellow;
+				text-decoration: none;
+			}
+		}
+	}
+	.nav_logo{
+	height:$Medio;
+	margin-right: 1em;
+	}
+	.redes{
+	height:$Icon;
+	margin-right: 1em;
+	}
+	@media screen and (min-width: $break-large) {
+    	.navbar-toggler{
+			display: none !important;
+		}
+  	}
+	@media screen and (max-width: $break-small){
+		.navList{
+		display: none !important;
+		}
+		.navbar-toggler{
+		display: block !important;
+		background-color:$darkPink;
+		}
+	}
+}
+footer{
+	background-color:$darkPink;
+	.footer_logo{
+	height:$Medio;
+	margin-right: 1em;
+	}
+	.footer_link{
+		font-family: Roboto, sans-serif;
+		text-align: center;
+		color: black;
+		text-decoration: none;
+		&:hover{
+				color: yellow;
+				text-decoration: none;
+			}
+	}
+	.redes{
+	height:$Icon;
+	margin-right: 1em;
+	}
+}
+.btn-primary:focus{
+	background-color:$strongYellow !important;
+	border-color:$darkPink !important;
+	box-shadow: none !important;
+}
+section{
+	.section_tittle{
+		color:$autumnRed;
+	}
+}
+#SoyAbril{
+	.SoyAbril_foto{
+	height:$DosyMedio;
+	}
+
+	@media screen and (max-width: $break-small){
+		.SoyAbril_foto{
+		height:$Dos;
+		}
+	}
+}
+
+.skills{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	.skills_img{
+		height:$Dos;
+		width:$Dos;
+	}
+}
+.Sobremi_foto{
+	height:$Tres;
+}
+.trabajos{
+	background-color:$strongYellow;
+	padding: 1em;
+	margin: 1em auto;
+	.trabajos_tittle{
+		color:$autumnRed;
+		font-family: Roboto, sans-serif;
+	}
+	.trabajos_foto{
+		height:$Tres;
+	}
+}
+.blog{
+	background-color:$darkPink;
+	padding: 1em;
+	margin: 1em auto;
+	.blog_img{
+		height:$Uno;
+	}
+	.blog_tittle{
+		color:$autumnRed;
+		font-family: Roboto, sans-serif;
+	}
+}
+.row{
+	animation-duration: 2s;
+	animation-name: aparecer2;
+}
+@keyframes aparecer2{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
